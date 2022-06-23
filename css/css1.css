@@ -1,0 +1,236 @@
+body{
+  position:relative;
+  height:100%;
+}
+/*页眉区*/
+header {
+  background: url(../image/Snoopy.png) no-repeat;
+  background-position:right;
+  background-size: 50px 50px;
+
+}
+/*页眉区文字部分的设置*/
+header h1{
+    font-family:sans-serif;
+    color:coral;
+    font-size:small/3.0em;
+    
+    
+}
+/*导航区*/
+nav{
+    
+    width: 100%;
+    position:relative;  
+   
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:darksalmon;
+  }
+  /*设置四个链接标题的大小，背景颜色，宽度等分等属性*/
+ nav  ul li {
+    display:inline;
+    width:25%;
+    height:100%;
+    float:left;
+    text-align: center;
+    line-height: 400%;
+    color: rgb(255, 255, 255);
+    font-family:  Verdana;
+  }
+ /*导航区的几个链接，下面的hover是设置点击时的效果，点击之后变成灰色*/ 
+nav ul li a {
+    display:block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    height:100%;
+    margin-left:6px;
+    margin-right:6px; 
+    font-size:small/2.0em;
+  }
+nav  ul li a:hover {
+    background-color:grey;
+  }
+/*这个是整个整体部分属性的设置*/
+#container{
+  display:block;
+    margin-bottom:0px;
+    position: relative;
+    padding:5px;
+    background-color:bisque;
+}
+
+h2{
+  text-align:center;
+    font-size: 3.5em;
+    margin-bottom:5px;
+    color:lightsalmon;
+    font-family:Verdana;
+    
+}
+/*对于段落内容的设置，颜色，字体的型号，以及字体的粗细，居中等属性的设置*/
+#container p{
+    text-align:center;
+    font-size:1.2em;
+     color:darkgoldenrod;
+    margin-bottom:10px;
+    font-family:Verdana;
+    font-weight:700;
+}
+/*这个是对三个照片区域整体属性的设置，采用flex布局*/
+#container-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*采用flex布局，设置相对定位*/
+.container-2-con{
+  position: relative;
+    width: 1300px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+   
+}
+/*这个部分是对照片具体属性的设置，包括设置了flex布局，设置了框体部分的阴影*/
+/*以及滑进滑出，使用属性transition*/
+.con1{
+  max-width: 350px;
+  height:400px;
+  position: relative;
+  background:blanchedalmond;
+  margin: 30px 10px;
+  padding: 20px 10px;
+  flex-direction:column;
+  box-shadow:  0 5px 20px rgba(0, 0, 0, 0.642);
+  transition: 0.3s ease-in-out;
+  display: flex;
+}
+/*点击照片后会有500px的高度，显示文字*/
+.con1:hover{
+  height: 500px;
+}
+/*照片在框体中是绝对定位，设置了高度，宽度，以及左边距和上边距*/
+.ImgBx{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  top:20px;
+  left: 20px;
+
+}
+.ImgBx img{
+  max-width: 100%;
+  border-radius: 4px;
+ 
+}
+/*照片隐藏的字体内容设置，效果的设置与上边的相似*/
+.content{
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out; 
+}
+.content h3{
+  color:burlywood;
+}
+.con1:hover .content{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s ease-in-out;
+}
+
+
+/*页脚的属性设置，block，以及颜色，文字居中等属性*/
+footer{
+  display:block;
+  margin-top:0px;
+  background-color:cornsilk;
+  text-align: center;
+  color:dimgray;
+ 
+}
+/*表格部分整体布局的布置，比如说这个表格的高度，以及表格部分的背景颜色*/
+.add{
+  position:relative;
+  background-color: bisque;
+  width:100%;
+  height:226px;
+  
+}
+/*表格的具体样式，表格中每一行文字都是居中的，在表格中间设置一个背景图片*/
+.add .m3{
+ 
+  position: relative;
+  align-items: center;
+ 
+  background: url(../image/Snoopy.png) no-repeat ;
+  background-position:center;
+  background-size: 100px 100px;
+ 
+}
+
+.add .t1{
+  font-size: 30px;
+  font-weight: 200;
+  font-family:sans-serif;
+  color:coral;
+  
+  font-weight: 600;
+}
+/*设置每一个单元格的样式*/
+.add .t2{
+  font-size: 16px;
+  font-weight:400;
+  font-family:sans-serif;
+  color:peru;
+}
+/*小标题的样式*/
+.title-1 {
+  
+  margin:0px;
+  width: 100%;
+  height: 30px;
+  background-color:darksalmon;
+  text-align:center;
+}
+#c1{
+  font-weight:500;
+  color:darkred;
+  font-family: Verdana;
+  
+}
+/*具体兴趣爱好的介绍部分的样式*/
+.m5{
+  width:100%;
+  height: 280px;
+  background-color:blanchedalmond;
+  position:relative;
+  left: 0px;
+  margin-top:0px;
+  display: flex;
+  font-family:sans-serif;
+  font-weight:bolder;
+  color:darkgoldenrod;
+  text-align:center;
+  font-size:larger;
+}
+/*点击照片时的效果*/
+.m5 img:hover{
+  width: 260px;
+  height: 260px;
+  padding: 10px;
+  margin-top:10px; 
+}
+
+
+

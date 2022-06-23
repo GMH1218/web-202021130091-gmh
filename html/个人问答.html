@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人问答</title>
+    <link rel="stylesheet"  href="../css/css3.css">
+    <!--表格的样式-->
+<style>
+        table{
+            border-collapse: collapse;
+            left:350px;
+            position:absolute;
+           top:150px;
+        }
+        table,td.th{
+            border: 1px solid  darksalmon;
+        }
+        
+            
+    </style>
+</head>
+<body>
+    <!-- 页眉区的代码 -->
+  <header>
+        <h1>Hello,I am Guo Meihan!</h1>
+  </header>
+<!-- 导航区的代码 -->
+<nav>
+     <ul>
+            <li><a href="./个人主页.html">个人主页</a></li>
+            <li><a href="./兴趣爱好.html">兴趣爱好</a></li>
+            <li><a href="./班级工作.html">班级工作</a></li>
+            <li><a href="./个人问答.html">个人问答</a></li>
+           
+    </ul>
+</nav>
+<!-- 表单的设置 -->
+    <div class="con">
+    <form action="http://www.gmh.com/knowledge.php" method="post">
+        <div class="tableRow">
+            <p id="heads">
+              我的故乡:
+            </p>
+            <!--选择自己的故乡  -->
+            <p>
+                <select name="homeland">
+                  <option value="辽宁沈阳">辽宁沈阳</option>
+                  <option value="辽宁葫芦岛">辽宁葫芦岛</option>
+                  <option value="辽宁本溪">辽宁本溪</option>
+                  <option value="辽宁锦州">辽宁锦州</option>
+                </select>
+            </p>
+        </div>
+        <!-- 选择日期类型 -->
+        <div class="tableRow label">
+            <p id="heads">出生日期</p>
+            <p> <input type="date" name="date"> </p>
+        </div>
+        <!-- 单项选择的设置 -->
+        <div class="tableRow">
+            <p id="heads">最喜欢的菜:</p>
+            <p><br>
+                <input type="radio" name="cook" value="水煮鱼">水煮鱼<br>
+                <input type="radio" name="cook" value="小炒黄牛肉">小炒黄牛肉<br>
+                <input type="radio" name="cook" value="青椒炒肉丝">青椒炒肉丝<br>
+                <input type="radio" name="cook" value="油闷大虾">油闷大虾<br>
+                
+            </p>
+        </div>
+        <div class="tableRow">
+            <p id="heads">最喜欢的城市:</p>
+            <p><br>
+                <input type="radio" name="place" value="上海">上海<br>
+                <input type="radio" name="place" value="北京">北京<br>
+                <input type="radio" name="place" value="武汉">武汉<br>
+                <input type="radio" name="place" value="南京">南京<br>
+                
+            </p>
+        </div>
+        <div class="tableRow">
+            <p id="heads">
+              喜欢的电影题材:
+            </p>
+            <p>
+                <select name="movie">
+                  <option value="爱情轻喜剧">爱情轻喜剧</option>
+                  <option value="青春校园剧">青春校园剧</option>
+                  <option value="红色抗战剧">红色抗战剧</option>
+                  <option value="现实题材剧">现实题材剧</option>
+                
+                </select>
+            </p>
+        </div>
+        <div class="tableRow">
+            <p id="heads">最喜欢的歌曲:</p>
+            <p><br>
+                <input type="radio" name="song" value="Beautiful">Beautiful<br>
+                <input type="radio" name="song" value="情人">情人<br>
+                <input type="radio" name="song" value="青花瓷">青花瓷<br>
+                <input type="radio" name="song" value="不眠之夜">不眠之夜<br>
+                
+            </p>
+        </div>
+        <div class="tableRow">
+            <p></p>
+            <p> <input type="submit" value="提交"> </p>
+        </div>
+        </form>
+    </div>
+    <!-- 左边部分的设置，每个字都要换行 -->
+    <div align="center" class="elixir">
+        <h2>
+            我<br><br><br>
+            的<br><br><br>
+            世<br><br><br>
+            界<br><br><br>
+        </h2>
+    </div>
+    <!-- 表格的内容 -->
+    <table class="table"  width=650px height=550px border="1px" align="center">
+        <tr>
+            <td width="90" >姓名</td>
+            <td width="200">郭美含</td>
+            <td width="100">出生日期</td>
+            <td width="113">2001.12.18</td>
+            <td width="91">性别</td>
+            <td width="48">女</td>
+           
+        </tr>
+        <tr>
+            <td>学历</td>
+            <td>本科</td>
+            <td>专业</td>
+            <td>信息管理与信息系统</td>
+            <td>民族</td>
+            <td>汉族</td>
+        </tr>
+        <tr>
+            <td>学校</td>
+            <td>中南财经政法大学</td>
+            <td>政治面貌</td>
+            <td>共青团员</td>
+            <td>联系方式</td>
+            <td>15542922977</td>
+        </tr>
+        <tr>
+            <td>籍贯</td>
+            <td>辽宁葫芦岛</td>
+            <td>邮箱</td>
+            <td>1874392067@qq.com</td>
+        </tr>
+        <tr height="100">
+            <td width="100">主修课程</td>
+           <td colspan="6">
+               C++程序设计，离散数学    <br/>
+               计算机网络，操作系统，    <br/>
+               数据结构 信息系统分析与设计<br/>
+           </td>
+        </tr>
+        <tr>
+            <td width="100">技能证书</td>
+            <td colspan="6">
+                <ul>
+                    <li>CET 4</li>
+                   <li>驾驶证</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td width="100">荣誉奖项</td>
+            <td colspan="6"> 
+                <ul>
+                    <li>2020-2021学年度校级二等奖学金</li>
+                    <li>2021-2022校级优秀共青团员</li>
+                </ul>
+        </tr>
+        <tr>
+            <td colspan="7" align="center"><b>自我评价</b></td>
+        </tr>
+        <tr>
+            <td colspan="7" height="130">
+                 担任班级团支书，工作认真负责。学习中，踏实学习本专业知识，和小组合作时，
+                 具有强烈的团队合作精神和良好的工作能力。
+            </td>
+        </tr>
+    </tab>
+    <!-- 页脚区设置，设置span标签 -->
+    <footer>
+     
+        <span style:font-family:Arial>
+            "Copyright@GMH1218.163.com All Rights Reserved"
+        </span>
+        
+    </footer>
+</body>
+</html>
